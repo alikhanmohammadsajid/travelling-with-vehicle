@@ -23,25 +23,26 @@
     
   }
   .vehicle div{
+    
     display: inline;
   }
   .bike img{
-    width: 300px;
+    width: 240px;
     background-color: blanchedalmond;
     
   }
   .car img{
-    width: 300px;
+    width: 240px;
     background-color: blanchedalmond;
     
   }
   .bus img{
-    width: 300px;
+    width: 240px;
     background-color: blanchedalmond;
     
   }
   .train img{
-    width: 300px;
+    width: 240px;
     background-color: blanchedalmond;
     
   }

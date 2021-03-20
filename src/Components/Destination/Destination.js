@@ -13,7 +13,8 @@ useEffect(() => {
 }, [])
 
     return (
-        <div style={{textAlign:"center"}}>
+        <div className="d-flex">
+            <div className="col-md-6">
             <h1>Pick From</h1>
            <input type="text" placeholder="from"/>
 
@@ -21,8 +22,14 @@ useEffect(() => {
         <input type="text" placeholder="to"/>
         <br/>
         <br/>
-        <button>search</button>
+        <button className="btn-success">search</button>
             
+            </div>
+            
+
+            <div  className="col-md-6">
+                <h1>google map</h1>
+            </div>
         </div>
     );
 };

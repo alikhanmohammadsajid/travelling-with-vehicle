@@ -7,7 +7,7 @@ import image3 from "../../images/Group.png"
 
 const Home = () => {
     return (
-        <div>
+        <div className="container vehicles">
 
             <div className="vehicle">
                 <div className="bike">
