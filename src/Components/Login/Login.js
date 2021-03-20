@@ -19,23 +19,23 @@ const Login = () => {
     const handleGoogleSignIn = () => {
         const provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithPopup(provider).then((result) => {
-                const {displayName} = result.user;
-                const signedInUser = {name: displayName}
-                setLoggedInUser(signedInUser)
-                history.replace(from)
-                
-            }).catch((error) => {
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                var email = error.email;
-                var credential = error.credential;
-            });
+            const { displayName, email } = result.user;
+            const signedInUser = { name: displayName, email }
+            setLoggedInUser(signedInUser)
+            history.replace(from)
+
+        }).catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            var email = error.email;
+            var credential = error.credential;
+        });
     }
 
     return (
-        <div>
+        <div style={{textAlign:"center"}}>
             <h1>its log in</h1>
-            <button onClick={handleGoogleSignIn}>Google Sign In</button>
+            <button  onClick={handleGoogleSignIn}>Google Sign In</button>
         </div>
     );
 };

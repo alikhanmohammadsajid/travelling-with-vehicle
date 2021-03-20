@@ -1,31 +1,17 @@
 [{
     "location": "Bangladesh",
-    "city": "Dhaka"
+    "city": "Dhaka",
+    "vehicleName": "BIKE"
   }, {
     "location": "Bangladesh",
-    "city": "Chittagong"
+    "city": "Chittagong",
+    "vehicleName": "CAR"
   }, {
     "location": "Bangladesh",
-    "city": "Rajshahi"
+    "city": "Rajshahi",
+    "vehicleName": "BUS"
   }, {
     "location": "Bangladesh",
-    "city": "Pabna"
-  }, {
-    "location": "Bangladesh",
-    "city": "Khulna"
-  }, {
-    "location": "Bangladesh",
-    "city": "Barishal"
-  }, {
-    "location": "Bangladesh",
-    "city": "Noakhali"
-  }, {
-    "location": "Bangladesh",
-    "city": "Rangamati"
-  }, {
-    "location": "Bangladesh",
-    "city": "Cox's Bazar"
-  }, {
-    "location": "Bangladesh",
-    "city": "Khagrachori"
+    "city": "PABNA",
+    "vehicleName": "TRAIN"
   }]
