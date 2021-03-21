@@ -1,6 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import vehicles from "../../fakeData/data.json"
 
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
+
+const containerStyle = {
+  width: '400px',
+  height: '400px'
+};
+
+const center = {
+  lat: -3.745,
+  lng: -38.523
+};
 
 
 const Destination = () => {
@@ -28,10 +39,20 @@ useEffect(() => {
             
 
             <div  className="col-md-6">
-                <h1>google map</h1>
+            <LoadScript
+      googleMapsApiKey="AIzaSyCkKY4LWCwJHixJsLPW-1b8i3dBGfFzZzw"
+    >
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={10}
+      >
+        <></>
+      </GoogleMap>
+    </LoadScript>
             </div>
         </div>
     );
 };
 
-export default Destination;
+export default React.memo(Destination)
